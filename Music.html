@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<a href="Index.html" class="btn btn-danger" role="button">Leave</a>
+ </head>
+ <body>
+   <body background="assets/what-the-hex.png">
+   <div class="container">
+     <div class="row">
+       <div class="col-sm">
+      <img src="assets/1.jpg" alt="" height="200px" id="pic1">
+       </div>
+       <div class="col-sm">
+         <img src="assets/pic.jpg" alt="" height="200px" id="pic2">
+       </div>
+       <div class="col-sm">
+        <img src="assets/2.jpg" alt="" height="200px" id="pic3">
+       </div>
+     </div>
+   </div>
+   <div class="video">
+   <video width="1400" height="240" autoplay>
+     <source src="assets/music.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+   </video>
+ </div>
+   <div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea id="mes" placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+ </body>
+ </html>

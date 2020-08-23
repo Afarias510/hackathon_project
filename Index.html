@@ -2,109 +2,122 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- imports bootstrap -->
    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-   <a class="navbar-brand" href="#">RoomFlow</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+   <a class="navbar-brand" href="#">Room Flow</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
    </button>
-   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-     <ul class="navbar-nav">
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
        <li class="nav-item active">
-         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+         <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
        </li>
        <li class="nav-item">
-         <a class="nav-link" href="#">Create a Room</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="#">Search For rooms</a>
+         <a class="nav-link" href="create_room.html">Create Room</a>
        </li>
        <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Friends Online
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-           <a class="dropdown-item" href="#">Action</a>
-           <a class="dropdown-item" href="#">Another action</a>
-           <a class="dropdown-item" href="#">Something else here</a>
-         </div>
-       </li>
-       <div class="log-sign">
-       <button type="button" class="btn btn-light">Log in</button>
-       <button type="button" class="btn btn-dark">Sign Up</button>
-     </div>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Friends
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
      </ul>
+     <div class="search">
+     <form class="form-inline my-2 my-lg-0">
+       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+     </form>
+   </div>
+     <div class="log-sign">
+<button type="button" class="btn btn-light">Log in</button>
+<button type="button" class="btn btn-dark">Sign Up</button>
+</div>
+
    </div>
  </nav>
 </head>
-<body>
+<body background="assets/what-the-hex.png">
+
   <div class="card-deck">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="assets/music.jpg" class="card-img-top" alt="Music" height="300px">
       <div class="card-body">
+
         <h5 class="card-title">Music Room</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
-      <button type="button" class="btn btn-primary">Join Room</button>
+      <a href="Music.html" class="btn btn-primary" role="button">Join Room</a>
       <div class="card-footer">
         <small class="text-muted">Opened 3 mins ago</small>
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="assets/Star.jpg" class="card-img-top" alt="..." height="300px">
       <div class="card-body">
         <h5 class="card-title">Star Wars Room</h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
       </div>
+        <button type="button" class="btn btn-primary">Join Room</button>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Opened 3 mins ago</small>
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="assets/makeup.jpg" class="card-img-top" alt="..." height="300px">
       <div class="card-body">
         <h5 class="card-title">Makeup Room</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
       </div>
+        <button type="button" class="btn btn-primary">Join Room</button>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Opened 1 min ago</small>
       </div>
     </div>
   </div>
   <div class="card-deck">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="assets/basket.jpg" class="card-img-top" alt="..." height="300px">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Basketball Room</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
+        <button type="button" class="btn btn-primary">Join Room</button>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Opened 13 mins ago</small>
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="assets/hockey.jpg" class="card-img-top" alt="..." height="300px">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">Hockey Room</h5>
+        <p class="card-text">Host: Elpollotonio</p>
+        <p>Come talk about hockey and see some hockey highlights, And talk about how the st.louis Blues didnt make it pass the first round😔</p>
       </div>
+        <button type="button" class="btn btn-primary">Join Room</button>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Opened 20 mins ago</small>
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="assets/code.jpg" class="card-img-top" alt="..." height="300px">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Coding Room</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
       </div>
+        <button type="button" class="btn btn-primary">Join Room</button>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Opened 7 mins ago</small>
       </div>
     </div>
   </div>
-
 
 
 </body>
